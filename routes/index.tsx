@@ -3,12 +3,13 @@ import { h } from "preact";
 import { tw } from "@twind";
 import { Head } from "https://deno.land/x/fresh@1.0.0/runtime.ts";
 
-
 export default function Home() {
   return (
-    <main class={tw`lg:border-[15px] lg:border-[#07080A] w-full h-full font-['inder'] pb-[50px]`}>
+    <main
+      class={tw`lg:border-[15px] lg:border-[#07080A] w-full h-full font-['inder'] pb-[50px]`}
+    >
       <Head>
-        <title>Fastvault | Decentralized file sharing</title>
+        <title>Fastvault | Decentralized file sharing network</title>
         <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -20,8 +21,9 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Inder&display=swap"
           rel="stylesheet"
         />
-        <meta name="description" content="" />
-        <meta name="keywords" content="" />
+        <meta name="description" content="Fastvault is a decentralized, ID-verified file sharing network, ensuring all your files are stored privately on the blockchain and inaccessible by 3rd parties." />
+        <meta name="keywords" content="fastvault, Fastvault, Imrz Vault, IMRZ, Imrzlabs, imrz labs, imrzlabs, dropbox on the blockchain, web 3 wetransfer, google drive on the blockchain, web 3.0 file sharing, web 3 dropbox, metaverse dropbox, Fast Vault" />
+        <meta property="og:image" content="/images/showcase/alpha-banner.png" />
       </Head>
 
       {/*****Header*****/}
@@ -34,7 +36,7 @@ export default function Home() {
           <button
             class={tw`bg-[#07080A] text-white text-[8px] sm:text-[12px] h-[30px] w-[85px] sm:h-[40px] sm:w-[125px] rounded-full shadow-lg`}
           >
-            Get Early Access
+            Try Now
           </button>
         </div>
       </section>
@@ -45,11 +47,20 @@ export default function Home() {
         class={tw`flex flex-col sm:gap-y-[75px] gap-y-[50px] `}
       >
         <div
-          class={tw`flex sm:mt-[50px] mt-[75px] sm:mb-[-15px] mb-[-25px] flex justify-center m-auto w-full`}
+          class={tw`gap-x-[20px] flex sm:mt-[50px] mt-[75px] sm:mb-[-15px] mb-[-25px] flex justify-center m-auto w-full`}
         >
           <a target="_blank" href="https://www.imrzlabs.com">
             <img
               src="/branding.svg"
+              class={tw`h-[35px] w-[170px] sm:h-[50px] sm:w-[200px]`}
+            />
+          </a>
+          <a
+            href="https://www.producthunt.com/posts/fastvault?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-fastvault"
+            target="_blank"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=351985&theme=dark"
               class={tw`h-[35px] w-[170px] sm:h-[50px] sm:w-[200px]`}
             />
           </a>
@@ -66,6 +77,7 @@ export default function Home() {
           you share are stored privately on the blockchain and not accessible by
           3rd parties.
         </p>
+        {/**** 
         <form class={tw`flex justify-center m-auto`}>
           <input
             type="email"
@@ -80,6 +92,10 @@ export default function Home() {
             </button>
           </input>
         </form>
+        ****/}
+        <a href="https://dapp.fastvault.io" class={tw`flex justify-center m-auto`}>
+          <img src="/try-b.svg" class={tw`w-[150px] h-[65px]`} />
+        </a>
         <img
           src="/scroll.svg"
           class={tw`h-[35px] w-[30px] flex justify-center m-auto`}
@@ -140,7 +156,7 @@ export default function Home() {
             Join our discord to help us evolve the platform or get in touch
             below if you want to join our innovation efforts.
           </p>
-          <a href="">
+          <a href="https://discord.gg/5eruR3BAH7" target="_blank">
             <img src="/button.svg" class={tw`w-[150px] h-[65px]`} />
           </a>
         </div>
