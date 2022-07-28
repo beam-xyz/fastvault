@@ -33,11 +33,13 @@ export default function Home() {
         </div>
 
         <div class={tw`flex m-auto justify-end w-full`}>
+        <a href="https://dapp.fastvault.io">
           <button
             class={tw`bg-[#07080A] text-white text-[8px] sm:text-[12px] h-[30px] w-[85px] sm:h-[40px] sm:w-[125px] rounded-full shadow-lg`}
           >
             Try Now
           </button>
+          </a>
         </div>
       </section>
 
