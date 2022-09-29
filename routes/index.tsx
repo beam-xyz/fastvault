@@ -33,7 +33,7 @@ export default function Home() {
         </div>
 
         <div class={tw`flex m-auto justify-end w-full`}>
-        <a href="https://dapp.fastvault.io">
+        <a href="https://beta.fastvault.io">
           <button
             class={tw`bg-[#07080A] text-white text-[8px] sm:text-[12px] h-[30px] w-[85px] sm:h-[40px] sm:w-[125px] rounded-full shadow-lg`}
           >
@@ -95,7 +95,7 @@ export default function Home() {
           </input>
         </form>
         ****/}
-        <a href="https://dapp.fastvault.io" class={tw`flex justify-center m-auto`}>
+        <a href="https://beta.fastvault.io" class={tw`flex justify-center m-auto`}>
           <img src="/try-b.svg" class={tw`w-[150px] h-[65px]`} />
         </a>
         <img
